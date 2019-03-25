@@ -9,7 +9,7 @@ import org.springframework.core.env.Environment;
 @SpringBootApplication
 public class Application {
 
-	@Bean(initMethod = "run")
+	@Bean
 	AsyncServer protoServer(Lookups handler, Environment env) {
 		return new AsyncServer(
 			env.getProperty("proto.port", Integer.class, 8001),
