@@ -1,0 +1,33 @@
+
+
+plugins {
+    id 'org.springframework.boot' version '2.2.0.M1'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.spring.io/snapshot' }
+    maven { url 'https://repo.spring.io/milestone' }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'io.projectreactor:reactor-test'
+
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.10.7',
+            'com.googlecode.libphonenumber:geocoder:2.105',
+            'org.springframework.boot:spring-boot-starter-actuator',
+            "com.google.protobuf:protobuf-java:3.7.0",
+            "javax.inject:javax.inject:1",
+            "org.springframework.boot:spring-boot-starter-webflux"
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

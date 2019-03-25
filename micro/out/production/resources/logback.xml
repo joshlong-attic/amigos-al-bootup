@@ -1,0 +1,25 @@
+<configuration>
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>%d [%thread] %level %logger - %m%n</Pattern>
+    </layout>
+  </appender>
+  <logger name="com.solab" level="DEBUG" additivity="false">
+    <appender-ref ref="CONSOLE" />
+  </logger>
+
+  <logger name="io.micronaut" level="INFO" additivity="false">
+    <appender-ref ref="CONSOLE" />
+  </logger>
+  <logger name="io.netty" level="INFO" additivity="false">
+    <appender-ref ref="CONSOLE" />
+  </logger>
+
+  <logger name="com.sun.mail" level="TRACE" additivity="false">
+    <appender-ref ref="CONSOLE" />
+  </logger>
+
+  <root level="${root-level:-TRACE}" additivity="false">
+    <appender-ref ref="CONSOLE"/>
+  </root>
+</configuration>

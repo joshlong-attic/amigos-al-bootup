@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.micronaut:micronaut-management:1.0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-management/1.0.4/db8b7d7f2d5399f49d45ced7ba7ac9eedf1eb4a3/micronaut-management-1.0.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-management/1.0.4/4b6f1ac5e1dd6fe349f7a65fbd208ade5cc3e1aa/micronaut-management-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

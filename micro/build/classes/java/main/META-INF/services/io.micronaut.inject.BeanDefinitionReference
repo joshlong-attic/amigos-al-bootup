@@ -1,0 +1,4 @@
+com.solab.example.$AsyncServerDefinitionClass
+com.solab.example.$ApplicationDefinitionClass
+com.solab.example.$Application$ProtoServerDefinitionClass
+com.solab.example.$LookupsDefinitionClass
